@@ -47,9 +47,9 @@ export const Header = () => {
                     </label>
                     <span className="ml-2 text-sm font-medium"></span>
                 </div>
-                <p className="text-gray dark:text-darkgray text-xl font-bold"> DARK MODE</p>
-                <p className="text-gray  dark:text-darkgray text-xl font-bold">|</p>
-                <button className="text-gray   dark:text-darkgray text-xl font-bold"> TÜRKÇE'YE GEÇ </button>
+                <p className="text-gray dark:text-darkgray text-[15px] font-bold"> DARK MODE</p>
+                <p className="text-gray  dark:text-darkgray text-[15px] font-bold">|</p>
+                <button className="text-gray   dark:text-darkgray text-[15px] font-bold"> TÜRKÇE'YE GEÇ </button>
 
             </div>
 
@@ -60,13 +60,13 @@ export const Header = () => {
 
                 <div>
                     <nav className="grid grid-cols-3 gap-5 text-xl">
-                        <Link to="/skills" className="text-gray  dark:text-darkgray text-l font-medium">
+                        <Link to="/skills" className="text-gray  dark:text-darkgray text-[18px] font-medium">
                             Skills
                         </Link>
-                        <Link to="/projects" className="text-gray  dark:text-darkgray text-l font-medium">
+                        <Link to="/projects" className="text-gray  dark:text-darkgray text-[18px] font-medium">
                             Projects
                         </Link>
-                        <Link to="/" className="text-gray  dark:text-darkgray text-l font-medium">
+                        <Link to="/" className="text-gray  dark:text-darkgray text-[18px] font-medium">
                             Hire me
                         </Link>
                     </nav>

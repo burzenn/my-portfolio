@@ -11,15 +11,15 @@ export const Hero = () => {
 
                 <div className="flex items-center gap-2">
                     <img src={line} className="h-1 w-20" />
-                    <p className="text-purple dark:text-darkpurple text-2xl">Burcu Zengin</p>
+                    <p className="text-purple dark:text-darkpurple text-[20px]">Burcu Zengin</p>
                 </div>
 
                 <div>
-                    <h1 className="text-5xl font-bold  dark:text-darktitlegray">Creative thinker</h1>
-                    <h1 className="text-5xl font-bold  dark:text-darktitlegray">Minimalism lover</h1>
+                    <h1 className="text-[72px] font-bold  dark:text-darktitlegray">Creative thinker</h1>
+                    <h1 className="text-[72px] font-bold  dark:text-darktitlegray">Minimalism lover</h1>
                 </div>
 
-                <p className="text-gray  dark:text-darkgray text-xl ">Hi, I’m Burcu. I’m a full-stack developer. If you are looking for a Developer who to craft solid and scalable frontend products with great user experiences. Let’s shake hands with me.</p>
+                <p className="text-gray  dark:text-darkgray text-[18px] ">Hi, I’m Burcu. I’m a full-stack developer. If you are looking for a Developer who to craft solid and scalable frontend products with great user experiences. Let’s shake hands with me.</p>
 
                 <div className="hero-links flex ">
                     <a href="https://your-contact-page-url" target="_blank" rel="noopener noreferrer" className="purple-button mr-3">Hire me</a>
