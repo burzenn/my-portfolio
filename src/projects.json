@@ -1,0 +1,23 @@
+[
+    {
+        "image": "/pizza.png",
+        "name": "My Dev Pizza",
+        "description": "Single Page Application: A website designed to bring food to software developers who get hungry in front of the computer was established for the Teknolojik Yemekler' brand by creating a Homepage, Order Form and Order Received page.",
+        "link1": "https://mydevpizza.vercel.app/",
+        "link2": "https://github.com/burzenn/fsweb-s7-challenge-pizza"
+    },
+    {
+        "image": "/tourism.png",
+        "name": "Masters Tourism",
+        "description": "Master Tourism is a site made in html organized for the UK base tourism agency. You can learn the general information of the agency from the site and can be easily contacted.",
+        "link1": "https://test-tourism.vercel.app/",
+        "link2": "https://github.com/burzenn/masters-tourism"
+    },
+    {
+        "image": "/movie.png",
+        "name": "My Fav Movie",
+        "description": "In this project, a web application containing a small movie database will be run with two different reducers. :)",
+        "link1": "https://myfavmovs.vercel.app/movies",
+        "link2": "https://github.com/burzenn/fsweb-s10g2-redux-filmler-solution"
+    }
+]
