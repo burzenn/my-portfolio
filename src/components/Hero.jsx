@@ -15,8 +15,8 @@ export const Hero = () => {
                 </div>
 
                 <div>
-                    <h1 className="text-7xl font-bold  dark:text-darktitlegray">Creative thinker</h1>
-                    <h1 className="text-7xl font-bold  dark:text-darktitlegray">Minimalism lover</h1>
+                    <h1 className="text-5xl font-bold  dark:text-darktitlegray">Creative thinker</h1>
+                    <h1 className="text-5xl font-bold  dark:text-darktitlegray">Minimalism lover</h1>
                 </div>
 
                 <p className="text-gray  dark:text-darkgray text-xl ">Hi, I’m Burcu. I’m a full-stack developer. If you are looking for a Developer who to craft solid and scalable frontend products with great user experiences. Let’s shake hands with me.</p>

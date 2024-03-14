@@ -60,13 +60,13 @@ export const Header = () => {
 
                 <div>
                     <nav className="grid grid-cols-3 gap-5 text-xl">
-                        <Link to="/skills" className="text-gray text-l font-medium">
+                        <Link to="/skills" className="text-gray  dark:text-darkgray text-l font-medium">
                             Skills
                         </Link>
-                        <Link to="/projects" className="text-gray text-l font-medium">
+                        <Link to="/projects" className="text-gray  dark:text-darkgray text-l font-medium">
                             Projects
                         </Link>
-                        <Link to="/" className="text-gray text-l font-medium">
+                        <Link to="/" className="text-gray  dark:text-darkgray text-l font-medium">
                             Hire me
                         </Link>
                     </nav>

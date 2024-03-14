@@ -14,7 +14,7 @@ function App() {
   return (
     <>
 
-      <div className=" bg-white dark:bg-darkbg m-0">
+      <div className="main bg-white dark:bg-darkbg ">
         <div className="main-container ">
           <Header />
           <Hero />
