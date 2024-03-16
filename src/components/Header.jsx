@@ -2,13 +2,24 @@
 import logo from "/image.png"
 import useLocalStorage from '../hooks/useLocalStorage';
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useContext } from "react";
+import LanguageContext from '../hooks/LanguageContext';
 
 
 export const Header = () => {
 
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useLocalStorage("theme", false);
     const element = document.documentElement
+
+    const { translations, changeLanguage, language } = useContext(LanguageContext);
+
+    const handleLanguageChange = () => {
+        const newLanguage = language === 'en' ? 'tr' : 'en';
+        changeLanguage(newLanguage);
+    };
+
+
+
 
     useEffect(() => {
         switch (darkMode) {
@@ -32,7 +43,7 @@ export const Header = () => {
 
     return (
         <header>
-            <div className="flex justify-end gap-4 mb-8">
+            <div className="flex justify-end gap-4 mt-8">
                 <div className="switch">
                     <input
                         type="checkbox"
@@ -47,9 +58,9 @@ export const Header = () => {
                     </label>
                     <span className="ml-2 text-sm font-medium"></span>
                 </div>
-                <p className="text-gray dark:text-darkgray text-[15px] font-bold"> DARK MODE</p>
+                <p className="text-gray dark:text-darkgray text-[15px] font-bold"> {translations.top1}</p>
                 <p className="text-gray  dark:text-darkgray text-[15px] font-bold">|</p>
-                <button className="text-gray   dark:text-darkgray text-[15px] font-bold"> TÜRKÇE'YE GEÇ </button>
+                <button onClick={handleLanguageChange} className="text-gray dark:text-darkgray text-[15px] font-bold "> {translations.top2}</button>
 
             </div>
 
@@ -61,13 +72,13 @@ export const Header = () => {
                 <div>
                     <nav className="grid grid-cols-3 gap-5 text-xl">
                         <Link to="/skills" className="text-gray  dark:text-darkgray text-[18px] font-medium">
-                            Skills
+                            {translations.header1}
                         </Link>
                         <Link to="/projects" className="text-gray  dark:text-darkgray text-[18px] font-medium">
-                            Projects
+                            {translations.header2}
                         </Link>
                         <Link to="/" className="text-gray  dark:text-darkgray text-[18px] font-medium">
-                            Hire me
+                            {translations.header3}
                         </Link>
                     </nav>
                 </div>

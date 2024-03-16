@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-.main {
-  width: 100%;
-  height: 100%;
-}
+
+
 
 .main-container {
-  width: 75%;
-  margin: 3rem 13rem 0 13rem;
-  color: rgb(0, 0, 0);
+  margin: auto 4rem;
   display: flex;
   flex-direction: column;
   gap: 5rem;
@@ -18,10 +14,8 @@
 }
 
 
-
-
 footer {
-  padding: 5rem 20rem 5rem 13rem;
+  padding: 5rem;
 }
 
 .purple-button {

@@ -1,8 +1,14 @@
-
+import React, { useContext } from 'react';
+import LanguageContext from '../hooks/LanguageContext';
 
 export const ProjectCard = ({ image, name, description, link1, link2 }) => {
 
+    const { translations } = useContext(LanguageContext);
+
+
     return (
+
+
         <div>
             <img src={image} className="rounded mb-3" />
             <p className="text-purple  dark:text-darkpurple text-[30px] mb-5"> {name}</p>
@@ -14,9 +20,11 @@ export const ProjectCard = ({ image, name, description, link1, link2 }) => {
             </div>
             <div className="flex justify-between">
                 <a href={link2} target="_blank" className="text-purple dark:text-darkpurple text-[16px] underline">Github</a>
-                <a href={link1} target="_blank" className="text-purple dark:text-darkpurple text-[16px] underline">Website</a>
+                <a href={link1} target="_blank" className="text-purple dark:text-darkpurple text-[16px] underline">{translations.website}</a>
             </div>
         </div>
+
+
     );
 }
 
